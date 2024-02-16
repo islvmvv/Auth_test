@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Authentication Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>User Authentication Test</h1>
+
+    <div id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="loggedIn" style="display: none">
+      <p>Welcome, <span id="user"></span>!</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="Auth.js"></script>
+    <footer id="main-footer">
+    <p>Copyright &copy; 2024 IMU</p>
+    </footer>
+  </body>
+</html>
